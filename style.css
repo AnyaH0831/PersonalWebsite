@@ -1,0 +1,140 @@
+/*Colours
+
+/* CSS HEX */
+:root{
+    /* --yale-blue: #134074ff;
+    --berkeley-blue: #13315cff;
+    --oxford-blue: #0b2545ff;
+    --powder-blue: #8da9c4ff;
+    --mint-cream: #eef4edff; */
+
+    --rusty-red: #d13440ff;
+    --red-pantone: #e63946ff;
+    --salmon-pink: #ec9a9aff;
+    --honeydew: #f1faeeff;
+    --mint-green: #cdeae5ff;
+    --non-photo-blue: #a8dadcff;
+    --cerulean: #457b9dff;
+    --lapis-lazuli: #31587aff;
+    --berkeley-blue: #1d3557ff;
+    --indigo-dye: #324766ff;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:var(--cerulean);
+  color: var(--honeydew);
+  font-family: 'Courier New', Courier, monospace;
+
+}
+/* 
+li {
+  float: right;
+} */
+
+li a {
+  display: block;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--lapis-lazuli);
+  color: var(--honeydew);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* color: var(--honeydew); */
+  scroll-behavior: smooth;
+
+}
+
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: var(--honeydew);
+
+}
+
+
+nav a{
+    color:var(--honeydew);
+}
+
+
+nav a:hover{
+    color: var(--honeydew);
+}
+
+.navBlock {
+  float: right;
+}
+
+.home {
+  float: left;
+}
+
+.blockSection{
+    display: flex;
+    text-align: center;
+    margin: 30px;
+    padding: 50px;
+    
+    /* width: 60%; */
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+
+    background-color: var(--non-photo-blue);
+    border-radius: 10px;
+    gap:20px;
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f0f0f0;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter:blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cerulean);
+    color: var(--honeydew);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
