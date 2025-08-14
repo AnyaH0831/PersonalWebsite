@@ -132,16 +132,51 @@ nav a:hover{
  
     justify-content: center;
 
-    background-color: var(--non-photo-blue);
+    /* background-color: var(--non-photo-blue); */
+
     border-radius: 10px;
     gap:5%;
     
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #f0f0f0;
+    font-size: 3em;
+    /* color: #f0f0f0; */
+
+    color: var(--indigo-dye);
+    line-height: 1;
+    margin: 10px 0;
 }
+
+h2 {
+    font-size: 2em;
+    color: var(--indigo-dye);
+    font-weight: 900;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--indigo-dye);
+    font-weight: 800;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1;
+    margin: 10px 0;
+    font-weight: 550;
+}
+
+
+
+.normalText{
+    color: var(--indigo-dye);
+}
+
 
 .glass {
     background: rgba(255, 255, 255, 0.1);
@@ -164,7 +199,7 @@ h1 {
 
 .footer{
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     background-color: var(--cerulean);
     color: var(--honeydew);
     position: fixed;
@@ -180,7 +215,7 @@ h1 {
   padding: 2rem;
   height:500px;
   width: 500px;
-  z-index: 1000;
+  /* z-index: 1000; */
   
 }
 
@@ -190,8 +225,88 @@ h1 {
     flex-direction: column;
     justify-content: right;
     align-items: right;
-    text-align: right;
-    /* padding: 20px; */
+    text-align: left;
     color: var(--indigo-dye);
     font-family: 'Courier New', Courier, monospace;
+    gap:5px;
+  
+}
+
+.experienceSection {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80vw;
+    overflow: hidden;
+    justify-content: center;
+    
+ 
+    color: var(--indigo-dye);
+    font-family: 'Courier New', Courier, monospace;
+    gap:5px;
+  
+}
+
+
+
+.sectionHeadings{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.orgFont{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--indigo-dye);
+    font-size: 1.2em;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.orgFont:hover{
+    text-decoration: underline 2.5px var(--salmon-pink);
+    padding:2px;
+    max-height: 35px;
+}
+
+.topnav-right {
+    float: left;
+    margin-left: 30px;
+}
+
+.resumeBullet{
+ 
+    flex-direction: column;
+    justify-content: left;
+    padding: 25px;
+    margin: 5px 0 20px 0;
+    
+    list-style-type: square;
+    background-color: transparent;
+    color: var(--indigo-dye);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.jobRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jobTitle {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.jobDate {
+  font-weight: 700;
+  float: right;
 }

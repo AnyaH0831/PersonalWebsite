@@ -12,11 +12,12 @@
         
             <nav>
                 <ul>
-                    <!-- <li class="about"><a href="#about">Anya Huang</a></li> -->
-                    <li id="aboutBtn" class="navBlock duration-300 navBtn transition-all"><a href="#about">About</a></li>
-                    <li id="experienceBtn" class="navBlock duration-300 navBtn transition-all"><a href="#Experience">Experience</a></li>
-                    <li id="projectBtn" class="navBlock duration-300 navBtn transition-all"><a href="#project">Projects</a></li>
+                    <li id="anyaBtn" class="navBlock topnav-right"><a href="#about">Anya Huang</a></li>
                     <li id="contactBtn" class="navBlock duration-300 navBtn transition-all"><a href="#contact">Contact</a></li>
+                    <li id="projectBtn" class="navBlock duration-300 navBtn transition-all"><a href="#project">Projects</a></li>
+                    <li id="experienceBtn" class="navBlock duration-300 navBtn transition-all"><a href="#Experience">Experience</a></li>
+                    <li id="aboutBtn" class="navBlock duration-300 navBtn transition-all"><a href="#about">About</a></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -25,8 +26,19 @@
             <section id="about" class="blockSection">
 
                 <div>
-                    <p class="textsection">Hi, I'm</p>
+                    <h3 class="textsection">Hi, I'm</h3>
                     <h1 class="textsection">Anya Huang</h1>
+                    <h3 class="textsection">Computer Engineering Student</h3>
+                    <h3 class="textsection">at the</h3>
+                    <h3 class="textsection">University of Waterloo</h3>
+
+                    <br>
+
+                    <p class="textsection">I'm a software developer passionate about building scalable, well-documented, and innovative solutions. Experienced in developing
+user-focused applications with clean, maintainable code.</p>
+                    <p class="textsection"></p>
+                    <p class="textsection">I love learning new technologies and applying them to real-world problems.</p>
+                    <p class="textsection">Feel free to explore my projects and get in touch!</p>
                 </div>
                 
             
@@ -46,6 +58,27 @@
                                 -63.4,43.2,-64.1,53.1,-53.6Z" transform="translate(100 100)" />
                             </clipPath>
                         </defs>
+
+                        <path d="M53.1,-53.6C62.9,-43.2,61.1,-21.6,57.3,-3.8C53.5,14,
+                        47.7,27.9,37.8,41.6C27.9,55.2,14,68.6,-0.2,68.7C-14.3,68.9,
+                        -28.6,55.9,-39.5,42.3C-50.4,28.6,-57.9,14.3,-55.4,2.6C-52.8,
+                        -9.2,-40.1,-18.3,-29.2,-28.8C-18.3,-39.3,-9.2,-51,6.2,-57.2C21.6,
+                        -63.4,43.2,-64.1,53.1,-53.6Z" 
+                        transform="translate(100 100)"
+                        fill="none"
+                        stroke="var(--berkeley-blue)" 
+                        stroke-width="5" />
+
+                        <path d="M53.1,-53.6C62.9,-43.2,61.1,-21.6,57.3,-3.8C53.5,14,
+                        47.7,27.9,37.8,41.6C27.9,55.2,14,68.6,-0.2,68.7C-14.3,68.9,
+                        -28.6,55.9,-39.5,42.3C-50.4,28.6,-57.9,14.3,-55.4,2.6C-52.8,
+                        -9.2,-40.1,-18.3,-29.2,-28.8C-18.3,-39.3,-9.2,-51,6.2,-57.2C21.6,
+                        -63.4,43.2,-64.1,53.1,-53.6Z" 
+                        transform="translate(100 100)"
+                        fill="none"
+                        stroke="var(--mint-green)" 
+                        stroke-width="1" />
+
                         <image 
                             height="200" 
                             width="200" 
@@ -54,29 +87,76 @@
                             href="images/anya.jpg" 
                             clip-path="url(#circleView)" 
                             preserveAspectRatio="xMidYMid slice" />
+
+                        
                     </svg>
                 </section>
 
-                <!-- <p>My name is Anya Huang.</p>
-                <p>I'm a Computer Engineering student at the University of Waterloo.</p> -->
             </section>
-            <section id="experience" class="section">
-                <h2>About Me</h2>
-                <!-- <p>I am a Computer Engineering student at the University of Waterloo.</p> -->
-                <p>My interests include software development, machine learning, and web technologies.</p>
+
+            <section id="experience" class="experienceSection">
+                <h2 class="sectionHeadings">Experience</h2>
+                <br>
+                <div>
+                    <a class="orgFont duration-300 transition-all" 
+                    href="https://www.rbcroyalbank.com/personal.html" 
+                    target="_blank" 
+                    >ROYAL BANK OF CANADA (RBC)</a>
+                    <span> | Toronto, ON</span>
+
+                    <div>
+                        <br><br>
+                        <div class="jobRow">
+                            <span class="jobTitle">Software Engineer Intern</span>
+                            <span class="jobDate">Jan 2025 - Apr 2025</span>
+                        </div>
+                        
+                        <ul class="resumeBullet">
+                            <li>Selected from 1400+ applicants</li>
+                            <li>Developed a webpage application using HTML/CSS, JavaScript, and Java to automate message 
+                                template creation in JSON format for inputs in MongoDB databases for different message types 
+                                for the clients, such as Message Centre, SMS/Push, OTP, and voice</li>
+                            <li>Connect the application to multiple MongoDB databases for each message type using Java with 
+                                the Spring Boot framework</li>
+                            <li>Application includes features such as search templates in the databases, file/folder navigation, 
+                                edit/create/retrieve a message template from the database using the multiple endpoints created with 
+                                Java, and preview both JSON and HTML formats of the message template</li>   
+                            <li>Increased the template creation’s efficiency by 1000% and relieved developers’ tasks from manually 
+                                creating the templates</li>
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="jobRow">
+                            <span class="jobTitle">Software Engineer Intern</span>
+                            <span class="jobDate">Jan 2024 - Apr 2024</span>
+                        </div>
+                        <ul class="resumeBullet">
+                            <li>Selected from 1400+ applicants</li>
+                            <li>Worked in a group of 4 on the Digital Investment (DI) Online team to automate UI 
+                                and API test cases using Java with the Selenium framework</li>
+                            <li>Increased QE efficiency per release, saving 34 hours in regression testing</li>   
+                            <li>Presented our project in front of company executives and seniors, gathering over 100 people to share our project</li>
+                        
+                        </ul>
+                    </div>
+              
+                </div>
+
+                
+                
             </section>
+
             <section id="project" class="section">
 
             </section>
+
+
             <section id="contact" class="section">
                 <h2>Contact Me</h2>
                 <p>You can reach me at my email:
             </section>
-                
-            <div class="blockSection glass">   
-                <h1>Hi, welcome!</h1>
-                <!-- <p>I'm a Computer Engineering student at the University of Waterloo!</p> -->
-            </div>
+
 
             
         </div>
