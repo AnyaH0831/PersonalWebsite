@@ -33,10 +33,7 @@ ul {
   font-family: 'Courier New', Courier, monospace;
 
 }
-/* 
-li {
-  float: right;
-} */
+
 
 li a {
   display: block;
@@ -47,8 +44,9 @@ li a {
 }
 
 li a:hover {
-  background-color: var(--lapis-lazuli);
+  /* background-color: var(--lapis-lazuli); */
   color: var(--honeydew);
+  
 }
 
 body {
@@ -77,8 +75,35 @@ nav a{
 
 nav a:hover{
     color: var(--honeydew);
+    /* text-decoration: underline; */
+    /* border-bottom: 2px solid var(--red-pantone); */
 }
 
+.navBtn:hover{
+
+    text-decoration: underline 2.5px var(--salmon-pink);
+
+    padding:2px;
+    max-height: 35px;
+    
+}
+
+.navBtn.active{
+    border-bottom: 2px solid var(--red-pantone);
+    /* background-color: var(--lapis-lazuli); */
+    padding:0px;
+}
+
+.duration-300 {
+    animation-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+}
 .navBlock {
   float: right;
 }
