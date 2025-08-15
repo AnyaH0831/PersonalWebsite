@@ -34,6 +34,32 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("experienceBtn").classList.remove("active");
         document.getElementById("projectBtn").classList.remove("active");   
     });
+
+
+    const filterButtons = document.querySelectorAll('.projectFilters button');
+    const cards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+         
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.classList.contains(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+
+
 });
 
 
