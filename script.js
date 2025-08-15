@@ -1,5 +1,6 @@
+console.log("Script loaded successfully!");
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Script loaded successfully!");
+    console.log("DOM loaded successfully!");
 
     document.getElementById("aboutBtn").classList.add("active");
 
