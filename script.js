@@ -59,6 +59,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // prevent default form submission
+
+        const data = {
+            name: form.name.value,
+            email: form.email.value,
+            message: form.message.value
+        };
+
+        try {
+            const res = await fetch('https://backend-api-nine-theta.vercel.app/api/sendEmail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+            });
+
+            const result = await res.json();
+            alert(result.success || result.error); // show success/error
+            form.reset(); // clear the form
+        } catch (err) {
+            alert('Failed to send message.');
+            console.error(err);
+        }
+    });
 
 
 });
