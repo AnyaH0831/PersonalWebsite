@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', async (e) => {
-        e.preventDefault(); // prevent default form submission
+        e.preventDefault(); 
 
         const data = {
             name: form.name.value,
@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             const result = await res.json();
-            alert(result.success || result.error); // show success/error
-            form.reset(); // clear the form
+            alert(result.success || result.error); 
+            form.reset(); 
         } catch (err) {
             alert('Failed to send message.');
             console.error(err);
