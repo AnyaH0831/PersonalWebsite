@@ -1,3 +1,6 @@
+const now = new Date();
+console.log(now.toLocaleTimeString()); 
+
 console.log("Script loaded successfully!");
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM loaded successfully!");
@@ -86,6 +89,28 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+ 
+    if (!hamburger || !mobileNav) {
+        console.log("Element not found!", hamburger, mobileNav);
+        return;
+    }
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', () => {
+        mobileNav.classList.toggle('open');
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+        });
+    });
+
+    
+  
 
 });
 
