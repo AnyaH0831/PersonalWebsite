@@ -109,7 +109,36 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    
+    const sections = [
+        { id: "about", btn: document.getElementById("aboutBtn") },
+        { id: "experience", btn: document.getElementById("experienceBtn") },
+        { id: "project", btn: document.getElementById("projectBtn") },
+        { id: "contact", btn: document.getElementById("contactBtn") }
+    ];
+
+   
+    sections.forEach(section => {
+        section.btn.addEventListener("click", function() {
+            document.getElementById(section.id).scrollIntoView({ behavior: "smooth" });
+        });
+    });
+
+ 
+    window.addEventListener("scroll", () => {
+        const scrollPos = window.scrollY + window.innerHeight / 2; 
+
+        sections.forEach(section => {
+            const elem = document.getElementById(section.id);
+            const top = elem.offsetTop;
+            const bottom = top + elem.offsetHeight;
+
+            if (scrollPos >= top && scrollPos < bottom) {
+                section.btn.classList.add("active");
+            } else {
+                section.btn.classList.remove("active");
+            }
+        });
+    });
   
 
 });

@@ -221,7 +221,7 @@ p{
     color: var(--honeydew);
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     font-family: 'Courier New', Courier, monospace;
 }
 
