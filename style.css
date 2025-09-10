@@ -70,7 +70,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-
+  min-height: 100vh; /* Add this */
+  overflow-x: hidden; /* Add this */
 }
 
 
@@ -221,8 +222,16 @@ p{
     color: var(--honeydew);
     position: relative;
     bottom: 0;
-    width: 100vw;
+    width: 100vw; /* Default for PC */
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%; /* Mobile view */
+    }
 }
 
 .blob-photo svg{
@@ -509,6 +518,32 @@ p{
 .contactSection button:hover {
   background-color: var(--red-pantone);
   color: var(--honeydew);
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Center items on mobile */
+    align-items: center;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contact-info-container {
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        gap: 30px; 
+        text-align: left; 
+    }
 }
 
 @media (max-width: 768px) {
